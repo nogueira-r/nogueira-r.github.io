@@ -1,5 +1,6 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto; /* Adjust the height of the grid as needed */
   grid-column-gap: 10px; /* Adjust the gap between columns as needed */
 }
