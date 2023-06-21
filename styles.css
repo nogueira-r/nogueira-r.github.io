@@ -1,6 +1,10 @@
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto; /* Adjust the height of the grid as needed */
-  grid-column-gap: 10px; /* Adjust the gap between columns as needed */
+  display: flex;
+  justify-content: space-between; /* Adjust alignment as needed */
+  align-items: flex-start; /* Adjust alignment as needed */
+}
+
+.column {
+  flex: 1;
+  margin-right: 10px; /* Adjust the margin between columns as needed */
 }
