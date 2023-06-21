@@ -1,15 +1,10 @@
 .container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-between; /* Adjust alignment as needed */
+  align-items: flex-start; /* Adjust alignment as needed */
 }
 
 .column {
   flex: 1;
-  margin-right: 10px;
-}
-
-.pdf-container {
-  width: 50%; /* Adjust the width of the PDF element as needed */
-  height: auto;
+  margin-right: 10px; /* Adjust the margin between columns as needed */
 }
