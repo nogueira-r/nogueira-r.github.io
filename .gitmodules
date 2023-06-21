@@ -4,3 +4,6 @@
 [submodule "submodules/Student-Gradebook-Database-Website"]
 	path = submodules/Student-Gradebook-Database-Website
 	url = https://github.com/nogueira-r/Student-Gradebook-Database-Website
+[submodule "submodules/Asteroid-Video-Game-Project"]
+	path = submodules/Asteroid-Video-Game-Project
+	url = https://github.com/nogueira-r/Asteroid-Video-Game-Project
