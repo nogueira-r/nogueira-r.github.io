@@ -1,8 +1,5 @@
 .container {
-  display: flex;
-}
-
-.column {
-  flex: 1;
-  margin-right: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px; /* Adjust the gap between columns as needed */
 }
