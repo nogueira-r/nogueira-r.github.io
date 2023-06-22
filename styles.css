@@ -23,7 +23,7 @@
 @media screen and (max-width: 768px) {
   .pdf-container .asset {
     width: 100%;
-    height: auto;
+    height: 400px;
   }
   
   .pdf-container .wide-asset {
