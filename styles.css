@@ -11,8 +11,7 @@
 }
 
 .pdf-container .wide-asset {
-  width: 40%;
-  height: 400px; /* Adjust the height as needed */
+  width: 100%;
 }
 
 .pdf-container embed,
