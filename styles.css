@@ -10,22 +10,18 @@
 }
 
 .pdf-container {
+  width: 100%; /* Full width by default */
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .pdf-container embed {
-  width: 49%; /* Adjust the width as needed */
+  width: 50%; /* Display two PDFs side by side */
 }
 
 @media screen and (max-width: 768px) {
   /* For screens smaller than 768px (e.g., mobile) */
-  .pdf-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .pdf-container embed {
-    width: 100%;
+    width: 100%; /* Full width stacking */
   }
 }
