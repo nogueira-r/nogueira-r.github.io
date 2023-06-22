@@ -1,16 +1,21 @@
 .pdf-container {
-  width: 100%; /* Full width by default */
   display: flex;
   flex-wrap: wrap;
 }
 
-.pdf-container embed {
-  width: 50%; /* Display two PDFs side by side */
+.pdf-container .asset {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.pdf-container embed,
+.pdf-container video {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
-  /* For screens smaller than 768px (e.g., mobile) */
-  .pdf-container embed {
-    width: 100%; /* Full width stacking */
+  .pdf-container .asset {
+    width: 100%;
   }
 }
