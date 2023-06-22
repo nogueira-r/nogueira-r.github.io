@@ -1,7 +1,6 @@
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
-  background-color: #f4f4f4;
 }
 
 h1 {
@@ -19,11 +18,6 @@ p {
   margin-bottom: 10px;
 }
 
-a {
-  color: #337ab7;
-  text-decoration: none;
-}
-
 ul {
   list-style: none;
   padding-left: 0;
@@ -33,6 +27,11 @@ li {
   margin-bottom: 5px;
 }
 
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
 .pdf-container {
   display: flex;
   flex-wrap: wrap;
@@ -40,13 +39,9 @@ li {
 }
 
 .pdf-container .asset {
-  width: 40%; /* Adjust the width as needed */
+  width: 40%;
   padding: 10px;
   box-sizing: border-box;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
 }
 
 .pdf-container .wide-asset {
@@ -57,17 +52,19 @@ li {
 .pdf-container video {
   width: 100%;
   height: 800px; /* Adjust the height for desktop */
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 768px) {
   .pdf-container .asset {
     width: 100%;
   }
-  
+
   .pdf-container .wide-asset {
     width: 100%;
   }
-  
+
   .pdf-container embed,
   .pdf-container video {
     height: auto; /* Let the content determine the height on mobile */
