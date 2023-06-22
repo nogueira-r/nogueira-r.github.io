@@ -1,14 +1,3 @@
-.container {
-  display: flex;
-  justify-content: space-between; /* Adjust alignment as needed */
-  align-items: flex-start; /* Adjust alignment as needed */
-}
-
-.column {
-  flex: 1;
-  margin-right: 10px; /* Adjust the margin between columns as needed */
-}
-
 .pdf-container {
   display: flex;
   justify-content: space-between;
