@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+.pdf-container .wide-asset {
+  width: 100%;
+}
+
 .pdf-container embed,
 .pdf-container video {
   width: 100%;
