@@ -22,4 +22,8 @@
   .pdf-container .asset {
     width: 100%;
   }
+  
+  .pdf-container .wide-asset {
+    width: 100%;
+  }
 }
