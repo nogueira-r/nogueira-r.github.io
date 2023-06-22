@@ -1,49 +1,25 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+.container {
+  display: flex;
+  justify-content: space-between; /* Adjust alignment as needed */
+  align-items: flex-start; /* Adjust alignment as needed */
 }
 
-h1 {
-  color: #333;
-  text-align: center;
-}
-
-h2 {
-  color: #666;
-  margin-top: 30px;
-}
-
-p {
-  color: #777;
-  margin-bottom: 10px;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-li {
-  margin-bottom: 20px;
-}
-
-a {
-  color: #337ab7;
-  text-decoration: none;
+.column {
+  flex: 1;
+  margin-right: 10px; /* Adjust the margin between columns as needed */
 }
 
 .pdf-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
 }
 
 .pdf-container embed {
-  width: 49%;
+  width: 49%; /* Adjust the width as needed */
 }
 
 @media screen and (max-width: 768px) {
+  /* For screens smaller than 768px (e.g., mobile) */
   .pdf-container {
     flex-direction: column;
     align-items: flex-start;
