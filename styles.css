@@ -56,18 +56,14 @@ a {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.asset.pdf.wide {
-  width: 100%;
-  height: auto;
+/* Alternating dark and light background */
+.pdf-container:nth-child(odd) {
+  background-color: #f1f1f1;
 }
 
-.asset.pdf.wide embed {
-  width: 100%;
-  height: auto;
+.pdf-container:nth-child(even) {
+  background-color: #ddd;
 }
-
-
-
 
 @media screen and (max-width: 768px) {
   .pdf-container .asset {
