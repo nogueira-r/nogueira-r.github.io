@@ -56,12 +56,11 @@ a {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Alternating dark and light background */
-.pdf-container:nth-child(odd) {
+.project-container:nth-child(even) {
   background-color: #f1f1f1;
 }
 
-.pdf-container:nth-child(even) {
+.project-container:nth-child(odd) {
   background-color: #ddd;
 }
 
