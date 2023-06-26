@@ -56,9 +56,14 @@ a {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.asset.pdf.wide {
+  width: 100%;
+}
+
 .asset.pdf.wide embed {
   width: 100%;
 }
+
 
 
 @media screen and (max-width: 768px) {
