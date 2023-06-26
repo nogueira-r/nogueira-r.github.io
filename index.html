@@ -1,3 +1,7 @@
+To separate your projects into different tabs, similar to Apple's product separation, you can use HTML and CSS to create a navigation header with tabs. Here's an example of how you can modify your code:
+
+HTML:
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,104 +11,119 @@
     <title>Rodrigo Nogueira's Professional Online Portfolio</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#android">Android Contacts Database App</a></li>
+                <li><a href="#gradebook">Student Gradebook Database Website</a></li>
+                <li><a href="#asteroid">Asteroid Video Game</a></li>
+                <li><a href="#voice">Voice Synthesis AI Model</a></li>
+                <li><a href="#retail">Retail App Design</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <h1>Rodrigo Nogueira's Professional Online Portfolio V1</h1>
 
-    <h2>Contact Information</h2>
-    <p>Name: Rodrigo Nogueira</p>
-    <p>Email: <a>rnogueira0113@gmail.com</a></p>
-    <p>Phone: <a>(201) 932-6470</a></p>
+    <section id="android">
+        <h2>Android Contacts Database App</h2>
+        <!-- Rest of the content for this project -->
+    </section>
+    
+    <section id="gradebook">
+        <h2>Student Gradebook Database Website</h2>
+        <!-- Rest of the content for this project -->
+    </section>
+    
+    <section id="asteroid">
+        <h2>Asteroid Video Game</h2>
+        <!-- Rest of the content for this project -->
+    </section>
+    
+    <section id="voice">
+        <h2>Voice Synthesis AI Model</h2>
+        <!-- Rest of the content for this project -->
+    </section>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <h4>Android Contacts Database App</h4>
-            <p>This is a contacts app built in Android Studio, utilizing SQL database to store and query names.</p>
-            <p><a href="https://github.com/nogueira-r/Contacts-Android-App-Project">Source Code</a></p>
-            <div class="pdf-container">
-              <div class="asset">
-                <p>Documentation</p>
-                <embed src="assets/contacts-documentation.pdf" type="application/pdf">
-              </div>
-              <div class="asset">
-                <p>Demo</p>
-                <video controls>
-                  <source src="assets/contacts-demo.mp4" width="25%" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-
-        </li>
-        
-        <li>
-            <h4>Student Gradebook Database Website</h4>
-            <p>This is an MVC written website built on Visual Studio utilizing SQL database to store student grades.</p>
-            <p><a href="https://github.com/nogueira-r/Student-Gradebook-Database-Website">Source Code</a></p>
-            <p>Documentation</p>
-            <div class="asset">
-              <h4>Demo</h4>
-              <video controls width="100%">
-                <source src="assets/gradebook-demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-        </li>
-        
-        <li>
-            <h4>Asteroid Video Game</h4>
-            <p>This is a DirectX 11 video game built with Visual Studio</p>
-            <p><a href="https://github.com/nogueira-r/Asteroid-Video-Game-Project">Source Code</a></p>
-            
-            <div class="pdf-container">
-              <div class="wide-asset">
-                  <p>Presentation</p>
-                  <embed src="assets/game-documentation.pdf" type="application/pdf">
-              </div>
-            </div>
-            
-            <div class="asset">
-              <h4>Demo</h4>
-              <video controls width="100%">
-                <source src="assets/game-demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-        </li>
-        
-        <li>
-          <h4>Voice Synthesis AI Model</h4>
-          <p>This is a project where my partner researched Neural Networks, while I trained an AI model and created inferences.</p>
-          <div class="pdf-container">
-            <div class="asset">
-              <p>Presentation</p>
-              <embed src="assets/presentation.pdf" type="application/pdf">
-            </div>
-            <div class="asset">
-              <p>Documentation</p>
-              <embed src="assets/documentation.pdf" type="application/pdf">
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <h4>Retail App Design</h4>
-          <p>This is an app design created with Adobe XD made for a retail clothing brand.</p>
-          <div class="pdf-container">
-            <div class="asset">
-              <p>Storyboard</p>
-              <embed src="assets/storyboard.pdf" type="application/pdf">
-            </div>
-            <div class="asset">
-              <p>Demo</p>
-              <video controls>
-                <source src="assets/demo.mp4" width="25%" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        </li>
-
-        
-    </ul>
+    <section id="retail">
+        <h2>Retail App Design</h2>
+        <!-- Rest of the content for this project -->
+    </section>
+    
+    <script src="script.js"></script>
 </body>
 </html>
+```
+
+CSS:
+```css
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  color: #666;
+  margin-top: 30px;
+}
+
+p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.pdf-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pdf-container .asset {
+  width: 45%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.pdf-container .wide-asset {
+  width: 100%;
+}
+
+.pdf-container embed,
+.pdf-container video {
+  width: 100%;
+  height: 800px; /* Adjust the height for desktop */
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .pdf-container .asset {
+    width: 100%;
+  }
+
+  .pdf-container .wide-asset {
+    width: 100%;
+  }
+
+  .pdf-container embed,
+  .pdf-container video {
+    height: auto; /* Let the

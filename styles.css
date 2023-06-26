@@ -56,9 +56,6 @@ a {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-
-
-
 @media screen and (max-width: 768px) {
   .pdf-container .asset {
     width: 100%;
@@ -72,4 +69,31 @@ a {
   .pdf-container video {
     height: auto; /* Let the content determine the height on mobile */
   }
+}
+
+header {
+  background-color: #f5f5f5;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+section {
+  margin-top: 30px;
 }
