@@ -62,7 +62,9 @@ a {
 
 .asset.pdf.wide embed {
   width: 100%;
+  height: auto;
 }
+
 
 
 
