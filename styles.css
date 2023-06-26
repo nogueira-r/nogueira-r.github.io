@@ -1,16 +1,75 @@
-/* styles.css */
-header nav ul {
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  color: #666;
+  margin-top: 30px;
+}
+
+p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 0;
 }
 
-header nav ul li {
-  display: inline;
-  margin-right: 10px;
+li {
+  margin-bottom: 5px;
 }
 
-header nav ul li a {
+a {
+  color: #337ab7;
   text-decoration: none;
-  color: #000;
+}
+
+.pdf-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pdf-container .asset {
+  width: 45%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.pdf-container .wide-asset {
+  width: 100%;
+}
+
+.pdf-container embed,
+.pdf-container video {
+  width: 100%;
+  height: 800px; /* Adjust the height for desktop */
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .pdf-container .asset {
+    width: 100%;
+  }
+
+  .pdf-container .wide-asset {
+    width: 100%;
+  }
+
+  .pdf-container embed,
+  .pdf-container video {
+    height: auto; /* Let the content determine the height on mobile */
+  }
 }
