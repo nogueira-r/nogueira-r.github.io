@@ -74,6 +74,12 @@ a {
   box-sizing: border-box;
 }
 
+.pdf-container .hor-video {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 .pdf-container .wide-asset {
   width: 100%;
 }
