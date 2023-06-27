@@ -64,7 +64,9 @@ a {
 .pdf-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
+
 
 .pdf-container .asset {
   width: 45%;
