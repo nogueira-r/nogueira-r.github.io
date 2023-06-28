@@ -106,3 +106,22 @@ a {
     height: auto; /* Let the content determine the height on mobile */
   }
 }
+
+<style>
+  /* Style for the notable projects section */
+  .project {
+    margin-bottom: 20px;
+  }
+
+  .project h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .project p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #666;
+  }
+</style>
