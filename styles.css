@@ -120,7 +120,7 @@ a {
   }
 
   .project p {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-size: 14px;
     color: #666;
   }
